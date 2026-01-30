@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title>My Multimedia Web Page</title>
+
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 80px;
+      }
+
+      /* ===== Header ===== */
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+        background: rgba(0, 0, 0, 0.9);
+        backdrop-filter: blur(6px);
+      }
+
+      .nav-links a {
+        color: #ffffff;
+        margin-left: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        position: relative;
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0%;
+        height: 2px;
+        background: #ffffff;
+        transition: 0.3s;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      /* ===== Content ===== */
+      main {
+        max-width: 1400px;
+        margin: auto;
+      }
+
+      .image-section {
+        margin: 120px 0;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        padding: 0 40px;
+      }
+
+      .image-box img {
+        width: 800px;
+        max-width: 100%;
+        border-radius: 12px;
+      }
+
+      .text-box {
+        max-width: 400px;
+        font-size: 17px;
+        line-height: 1.6;
+        color: #d1d5db;
+      }
+
+      /* Left image */
+      .left-image {
+        flex-direction: row;
+      }
+
+      /* Right image */
+      .right-image {
+        flex-direction: row-reverse;
+      }
+
+      /* Bottom image */
+      .bottom-image {
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: center;
+      }
+
+      .bottom-image .text-box {
+        max-width: 600px;
+        margin-bottom: 40px;
+      }
+
+      footer {
+        margin: 60px 0 40px;
+        text-align: center;
+        font-size: 14px;
+        color: #9ca3af;
+      }
+
+      /* Responsive */
+      @media (max-width: 900px) {
+        .image-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .text-box {
+          max-width: 90%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar">
+        <img
+          src="https://image2url.com/r2/default/images/1769703477508-c70f49d4-e5bd-4f63-a76c-b306dc114939.png"
+          width="120"
+          alt="Logo"
+        />
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENT -->
+    <main>
+      <!-- FIRST IMAGE -->
+      <div class="image-section left-image">
+        <div class="image-box">
+          <a
+            href="https://elaborate-lebkuchen-83949e.netlify.app"
+            target="_blank"
+          >
+            <img
+              src="https://image2url.com/r2/default/images/1769673054203-cfdb42b3-11e3-4fbe-9a87-a5ce14df7f58.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="text-box">
+          <h2>Digital Media Lab</h2>
+          <p>
+            Where text meets visuals, sound, and motion to create immersive
+            digital experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- SECOND IMAGE -->
+      <div class="image-section right-image">
+        <div class="image-box">
+          <a href="http://codewithsidharth.lovable.app/" target="_blank">
+            <img
+              src="https://image2url.com/r2/default/images/1769705869162-f14a76da-ef5b-4903-8cb0-71d374a7df29.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="text-box">
+          <h2>Digital Craft</h2>
+          <p>
+            A visual journey where creativity meets technology to tell
+            compelling digital stories.
+          </p>
+        </div>
+      </div>
+
+      <!-- LAST IMAGE -->
+      <div class="image-section bottom-image">
+        <div class="text-box">
+          <h2>Beyond the Map</h2>
+          <p>
+            Guiding journeys where every destination becomes a story worth
+            remembering.
+          </p>
+        </div>
+        <div <a class="image-box">
+          <a href="https://tranquil-lily-3691e7.netlify.app/" target="_blank">
+            <img
+              src="https://image2url.com/r2/default/images/1769708602879-38211eb5-5121-4263-9f38-d22fac5d854f.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <hr />
+      <footer>
+        <p>Created by Sidharth T. Praveen | Creative Projects</p>
+      </footer>
+    </main>
+  </body>
+</html>
